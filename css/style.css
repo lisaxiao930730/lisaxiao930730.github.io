@@ -1,0 +1,12 @@
+.bg-body-tertiary {
+  background-color: #ee7800 !important;
+}
+.nav-link {
+  color: #ffffff;
+}
+.navbar-brand {
+  color: #ffffff;
+}
+.navbar-nav .nav-link.active {
+  color: #ffffff;
+}
