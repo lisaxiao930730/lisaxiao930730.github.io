@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background:url(img/background.jpg) no-repeat center center/cover;
+    height: 3700px;
+    width: 1280px;
+    font-family: Libre Bodoni;
+}
+
+header {
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar h1{
+    padding-right:280px;
+    padding-left:150px;
+    font-size: 12px;
+    width: 52px;
+    text-transform: uppercase;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.hero-content h2 {
+    font-size: 96px;
+    margin: 0;
+    width: 774px;
+    text-transform: uppercase;
+    text-align: left;
+    line-height:  110px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin: 20px 0;
+    width: 565px;
+    text-align: left;
+    line-height: 25px
+}
+
+.number-container {
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 45px;
+}
+
+.upload-btn {
+    padding: 10px 20px;
+    font-family: Libre Bodoni;
+    font-size: 16px;
+    width: 117px;
+    height:43px;
+    color: #fff;
+    border: none;
+    background-color: rgb(255, 255, 255 , 0.3)
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction:row;
+    gap: 220px;
+    align-items: center;
+    padding-left: 140px;
+}
+
+.hero-number {
+    font-size: 110px;
+}
+
+/* Taipei Streets Section */
+.taipei-streets {
+    padding-left: 73px;
+    text-align: center;
+    width: 1280px;
+}
+
+.taipei-streets h2 {
+    text-transform: uppercase;
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+.taipei-streets h3 {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.taipei-streets p {
+    font-size: 13px;
+    width: 268px;
+    line-height:  23px;
+}
+
+.Streets-title {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.Streets-title h4 {
+    width: 600px;
+    font-size: 16px;
+    line-height:  25px;
+}
+
+.street-videos {
+    text-align: center;
+}
+
+.videos-title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left:90px ;
+}
+
+.street-videos h2 {
+    font-size: 96px;
+    text-transform: uppercase;
+    width: 393px;
+    padding-left: 0px;
+    margin: 0;
+}
+
+.street-videos p {
+    font-size: 16px;
+    width: 507px;
+    padding: 0px;
+    line-height:  30px;
+    margin: 0;
+}
+
+.photo-title {
+    flex-direction: row;
+    display: flex;
+    gap: 50px;
+    padding-left:180px;
+    padding-top: 150px;
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 0px;
+    padding-left:73px;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.photo-card2 {
+    width: 364px;
+    height: 829px;
+}
+
+.photo-card2 h3 { 
+    font-size: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+
+}
+
+.photo-card2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* 等比縮放，並裁剪圖片以填滿容器 */
+}
+
+.video-gallery {
+    display: flex;
+    gap: 0px;
+    flex-wrap: wrap;
+    padding-left: 73px;
+}
+
+.photo-card {
+    width: 364px;
+    height: 829px;
+
+    text-align: center;
+}
+
+.video-card {
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+.photo-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.video-card img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.video-card {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+
+.video-card:hover .overlay {
+    opacity: 1;
+}
+
+.play-button {
+    font-size: 40px;
+    color: #fff;
+}
+
+/* Footer Section */
+footer {
+    padding: 40px 20px;
+    color: #aaa;
+}
+
+footer h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-style: italic;
+    
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 150px;
+    padding-top: 90px;
+    padding-left: 150px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.footer-column ul li a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    padding-right:440px;
+}
