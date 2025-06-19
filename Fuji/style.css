@@ -1,0 +1,254 @@
+/*Import Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/*General Settings & CSS Reset*/
+* {box-sizing: border-box;}
+body {
+    color: #1B1B1D;
+    font-family: "Lato", sans-serif;
+}
+img {
+    display: block;  
+}
+a {
+    color: currentColor;/*意思就是它會去抓預設的顏色，以這個案例來講就是 body 的 #1B1B1D */
+    text-decoration: none;
+}
+h1,h2,h3,h4,p {
+    margin: 0;
+}
+
+/*Utility Class*/
+.list-none {
+    list-style: none;
+    margin: 0; padding: 0;
+}
+.block {
+    display: block;
+}
+
+/*Content Class*/
+.wrap {
+    margin: 16px auto;
+    padding-inline: 20px;
+}
+header {
+    display: flex;
+    
+}
+.Fuji-logo a {
+    text-indent: -999px;
+    display: block;
+    width: 80px;
+    height: 29px;
+    background-image: url(image/Fuji-logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    overflow: hidden;
+}
+nav {
+    margin-left: auto;
+}
+nav ul {
+    display: flex;
+    gap: 14px;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+}
+nav ul a {
+    font-size: .9rem;
+    font-weight: 700;
+    display: block;
+    padding: 8px 28px;
+    border: 1px solid #DFDFDF;
+    border-radius: 1.5rem;
+    transition:  0.2s;
+    color: #878789;
+    white-space: nowrap;
+}
+nav ul a:hover {
+    background-color:#DFDFDF;
+}
+main h2 {
+    font-size: 3.5rem;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 90px;
+    padding-bottom: 50px;
+}
+main h2 strong {/*設定漸層背景色的文字*/
+    background: linear-gradient(90deg,#f70000,#f70000,#f70000,#f70000,#f70000);
+    background-clip: text;
+    -webkit-text-fill-color:rgba(0,0,0,0);
+    font-size: 64px;  
+}
+
+picture img {
+  display: inline-block;
+}
+
+.center-img {
+  display: block;
+  margin: 0 auto;
+}
+
+h3.sub-title {
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin-block: 28px;
+}
+
+section.highlights {
+    display: flex;
+    gap: 18px;
+}
+
+section .card img {
+  padding: 16px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+section .card {
+    flex-basis: 25%;
+    padding: 14px 16px 20px 16px;
+    border: 1px solid #DFDFDF;
+    border-radius: 12px;
+    cursor: pointer;
+}
+section .card-title {
+    font-size: 1.1rem;
+    text-align: center ;
+    margin-block: 20px;
+}
+section .card-intro {
+    color: #636368;
+    line-height: 160%;
+    font-size: 0.9rem;
+}
+footer {
+    display: flex;
+}
+footer {
+    padding: 30px 8px;
+}
+footer p {
+    color: #878789;
+    font-size: 0.8rem;
+    margin-right: auto;
+}
+footer ul {
+    display: flex;
+    gap: 6px;
+    color: #878789;
+}
+footer li:not(:last-child)::after {/*如果不是li的最後一個孩子，就在後面加上 | 符號*/
+    content: "|";
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 0.75rem;
+    color: #878789;
+}
+footer a {
+    font-size: 0.85rem;
+    max-width: 960px
+}
+/* 設定手機版 */
+@media screen and (max-width: 767px) {
+    .wrap {
+      min-width: auto;
+      max-width: 100%;
+      padding-inline: 16px;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .logo-apple {
+  margin: 0 auto;
+}
+  
+    nav ul {
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
+    }
+  
+    nav ul a {
+      display: none;
+      text-align: center;
+      padding: 8px;
+      font-size: 1rem;
+      
+    }
+  
+    main h2 {
+      font-size: 2.5rem;
+      margin-top: 30px;
+      line-height: 1.2;
+    }
+  
+    h3.sub-title {
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    section.highlights {
+      flex-direction: column;
+    }
+  
+    section .card {
+      flex-basis: 100%;
+      height: 124px;
+    }
+
+    .card img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    section .card-title {
+      font-size: 1rem;
+    }
+  
+    section .card-intro {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  
+    footer {
+      flex-direction: column;
+      gap: 8px;
+      text-align: center;
+    }
+  
+    footer p {
+      margin: 0 auto;
+    }
+  
+    footer ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      color: #878789;
+    }
+  
+    footer li:not(:last-child)::after {
+      display: none;
+    }
+    .imac-text {
+        display: inline;
+      }
+      
+      @media (max-width: 768px) {
+        .imac-text {
+          display: block;
+        }
+      }
+  }
+  /* 手機版結束 */
+  
